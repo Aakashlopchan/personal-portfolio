@@ -7,39 +7,45 @@
 
 <body>
 	<header>
-	<h1>Aakash Lopchan Tamang</h1>
-	<nav>
-		<a href="#me">About</a>
-		<a href="#project">Projects</a>
-		<a href="#Contact">Contact</a>
-		<a href="blog">Blog</a>
-	</nav>
-</header>
+<video class="header-video" autoplay muted loop playsinline>
+	<source src="video.mp4" type="video/mp4">
+</video>
+	<div class="header-content">
+		<h1>Aakash Lopchan</h1>
+		<nav>
+			<a href="#me">About</a>
+			<a href="#project">Projects</a>
+			<a href="#Contact">Contact</a>
+			<a href="blog">Blog</a>
+		</nav>
+	</div>
+	</header>
 
 	<br><br>
-	<section id="me"><h2> About me </h2>
-		<p> Hello I'm Aakash Lopchan, a web developer passionate about building beautiful and functional websites. I enjoy learning new technologies and creating projects that make a difference. </p>
-		<img src="IMG_1594.png">
+	<section class="me"><h2> About me </h2>
+		<p> Aakash Lopchan is an avid football player from Nepal. Passionate about the game since 9 year, He plays as a midfilder and enjoys competing in local leagues and tournaments. Enjoying the game is more important and anything else in the pitch!</p>
+		<img class="normal-photo" src="IMG_1594.png">
 	</section>
 
-	<section id="project"> <h2> My projects </h2>
-		<img src="image.png">
+	<section class="project"> <h2> My projects </h2>
+		<img class="pitch-photo"src="pitch.png">
 	</section>
 
-	<section id="Contact"> <h3> Contact Me </h3>
-		<br>
-		<form>
-			<label> Name: </label>
-			<input type="text" placeholder="Enter your name:"><br><br>
-			<label> Email: </label>
-			<input type="text" placeholder="Enter your mail:"><br><br>
-			<label> Message: </label>
-			<input type="text" placeholder="Enter your message:"><br><br>
-			<button>Submit</button>
-		</form>
-	</section><br><br>
 
-	<footer>
+	<section class="contact" id="Contact">
+	<h3>Contact Me</h3>
+	<p>Have a question or want to collaborate? Send a message below.</p>
+
+	<form>
+		<input type="text" class="input" placeholder="Your Name">
+		<input type="email" class="input" placeholder="Your Email">
+		<textarea class="input textarea" placeholder="Your Message"></textarea>
+		<button type="submit" class="send-btn">Send Message</button>
+	</form>
+</section>
+
+
+	<footer class="foot">
 	 &copy; 2025 Aakash Lopchan. All rights reserved.
 	</footer>
 
