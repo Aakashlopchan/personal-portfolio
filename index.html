@@ -36,18 +36,32 @@
 	<h3>Contact Me</h3>
 	<p>Have a question or want to collaborate? Send a message below.</p>
 
-	<form>
+	<form id="contact-form">
 		<input type="text" class="input" placeholder="Your Name">
 		<input type="email" class="input" placeholder="Your Email">
 		<textarea class="input textarea" placeholder="Your Message"></textarea>
 		<button type="submit" class="send-btn">Send Message</button>
 	</form>
+
+	<div id="form-status">
 </section>
 
 
 	<footer class="foot">
 	 &copy; 2025 Aakash Lopchan. All rights reserved.
 	</footer>
+
+<script>
+document.getElementById("contact-form").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const status = document.getElementById("form-status");
+    status.innerText = "Message sent successfully!";
+    status.style.color = "green";
+});
+</script>
+
+	
 
 </body>
 </html>
